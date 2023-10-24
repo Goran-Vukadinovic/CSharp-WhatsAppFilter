@@ -1,0 +1,53 @@
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <AssemblyName>WhatsAppFilter</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <OutputType>WinExe</OutputType>
+    <UseWindowsForms>True</UseWindowsForms>
+    <TargetFramework>net45</TargetFramework>
+    <PlatformTarget>x86</PlatformTarget>
+    <Platforms>AnyCPU;x86</Platforms>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>10.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>app.ico</ApplicationIcon>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <RootNamespace />
+    <BaseOutputPath>..\bin\</BaseOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <EmbeddedResource Remove="MKN76JY5EL25JKTNTQW8KDK2DFTRECF4.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="MainForm.resources" />
+    <EmbeddedResource Include="MainForm.resources" LogicalName="MKN76JY5EL25JKTNTQW8KDK2DFTRECF4.resources" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Google.ProtocolBuffers">
+      <HintPath>..\Reference\Google.ProtocolBuffers.dll</HintPath>
+    </Reference>
+    <Reference Include="May">
+      <HintPath>..\Reference\May.dll</HintPath>
+    </Reference>
+    <Reference Include="mycurve25519">
+      <HintPath>..\Reference\mycurve25519.dll</HintPath>
+    </Reference>
+    <Reference Include="mylibaxolotl">
+      <HintPath>..\Reference\mylibaxolotl.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\Reference\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Security.Cryptography">
+      <HintPath>..\Reference\Security.Cryptography.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Management" />
+    <Reference Include="System.Core" />
+    <Reference Include="zlibnet">
+      <HintPath>..\Reference\zlibnet.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>
